@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>Personal Portfolio</title>
 
         <link rel="stylesheet" href="style.css">
@@ -21,16 +21,25 @@
         </nav>
 
         <section class="contact-section">
-            <form action="submit.php" method="post" class="contact-form">
+            <form class="contact-form">
                 <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
                 <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
                 <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
                 <button type="submit" class="form-submit-btn">contact</button>
-            </form>
+                <script>
+                    const submitBtn = document.querySelector('.form-submit-btn');
+                    submitBtn.addEventListener('click', function() {
+                      window.alert('thank you for contacting me, I will get back to you as soon as possible!');
+                    });
+                  </script>
+            </form>        
+            
+                 
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27321.539820941856!2d8.488107294246774!3d47.38315973412205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a49748c7e6b%3A0x27f43b055c0afb32!2sSIX%20ConventionPoint!5e0!3m2!1sde!2sch!4v1679995293461!5m2!1sde!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
+
         <script src="app.js"></script>
 
     </body>

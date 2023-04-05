@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>Personal Portfolio</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <!--navbar-->
+        <nav class="navbar">
+            <ul class="link-group">
+                <li class="link active"><a href="index.html">home</a></li>
+                <li class="link"><a href="about.html">about</a></li>
+                <li class="link"><a href="projects.html">projects</a></li>
+                <li class="link"><a href="contanct.html">contact</a></li>
+                
+            </ul>
+        </nav>
+
+        <div class="login-box">
+            <p>Login</p>
+            <form>
+              <div class="user-box">
+                <input required="" name="" type="text">
+                <label>Email</label>
+              </div>
+              <div class="user-box">
+                <input required="" name="" type="password">
+                <label>Password</label>
+              </div>
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                <button type="submit" class="submit-btn">Submit</button>
+                <script>
+                    const submitBtn = document.querySelector('.submit-btn');
+                    submitBtn.addEventListener('click', function() {
+                      window.alert('thank you for subscribing to the newsletter!');
+                    });
+                  </script>
+                  
+              </a>
+            </form>
+            
+            <p style="color: white";> Don't have an account? <a href="" class="a2">Sign up!</a></p>
+          </div>
+        <script src="app.js"></script>
+
+    </body>
+</html>
