@@ -711,6 +711,97 @@
   .link a:hover, .link.active a {
     opacity: 1;
   }
+  .navbar {
+    position: relative;
+    }
+    .dropdown {
+    position: relative;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    }
+    .navbar.active .dropdown {
+    display: block;
+    }
+    .dropbtn {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:active, .dropbtn:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .dropdown {
+    position: relative;
+    display: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: none;
+  }
+  
+  .dropdown a:active {background-color: #ddd;}
+  
+  .show {display: none;}
+  
+   
+  .dropbtn {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:active, .dropbtn:focus {
+    background-color:rgba(255, 255, 255, 0.2);
+  }
+  
+  .dropdown {
+    position: relative;
+    display: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: none;
+  }
+  
+  .dropdown a:active {background-color: #ddd;}
+  
+  .show {display: none;}
   
 @media only screen and (max-width: 778px) {
     .navbar.active .link-group {
@@ -824,7 +915,6 @@
       .hero-heading {
       font-size: 50px;
       }
-      .project-section.active,
       .project-section.active {
       padding: 50px;
       }
@@ -865,12 +955,13 @@
       width: 100%;
       margin: 30px 0;
       }
-  
-      .contact-section {
-      padding: 30px;
-      height: auto;
+      
+      .contact-form, .map {
+      padding: 35px;
       grid-template-columns: 1fr;
-      grid-gap: 0;
+      grid-gap: 0; 
+      margin-right: 50px;
+      width: 50%;
       }
       .contact-form input {
           position: relative;
