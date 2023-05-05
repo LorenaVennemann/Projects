@@ -876,15 +876,31 @@
       grid-template-columns: 1fr;
       grid-gap: 0;
       }
-      .contact-form input{
-      position: relative;
-      height: 60px;
-      margin-bottom: 20px;
-      margin-top: 30px;
-      border-top-width: 1px;
-      }
-      .heading {
+      .contact-form input {
+          position: relative;
+          height: 40px;
+          margin-bottom: 35px;
+          margin-top: -12px;
+          border-top-width: 1px;
+        }
+        .form {
+          position: static;
+        }
+          .heading {
       font-size: 30px;
       }
-    }
+      .navbar {
+        position: relative;
+        }
+        .dropdown {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+        }
+        .navbar.active .dropdown {
+        display: block;
+        }
+      }
        
