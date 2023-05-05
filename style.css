@@ -1067,4 +1067,7 @@
       .dropdown a:active {background-color: #ddd;}
       
       .show {display: block;}
+      .map{
+        width: 50%;
+      }
     }
